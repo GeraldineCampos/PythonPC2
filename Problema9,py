@@ -1,0 +1,13 @@
+# Función para eliminar vocales de una cadena
+def eliminar_vocales(texto):
+    # Definir las vocales (mayúsculas y minúsculas)
+    vocales = "aeiouAEIOU"
+    # Generar una nueva cadena sin vocales
+    resultado = ''.join([letra for letra in texto if letra not in vocales])
+    return resultado
+
+# Solicitar una cadena de texto
+cadena_texto = input("Ingrese una cadena de texto: ")
+
+# Mostrar el resultado con las vocales eliminadas
+print("Texto sin vocales:", eliminar_vocales(cadena_texto))
